@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú Café Andes</title>
+  <meta name="description" content="Menú digital de café: categorías, filtros y detalle de productos." />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <p class="kicker">Menú digital</p>
+    <h1>Café Andes</h1>
+    <p class="lead">Carta online con categorías, búsqueda y favoritos. Pensada para QR en mesa.</p>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Buscar (ej. latte, brownie)…" />
+      <div class="cats" id="cats"></div>
+    </div>
+  </header>
+  <main id="grid" class="grid"></main>
+  <aside id="drawer" class="drawer" hidden>
+    <button type="button" id="close" class="close">Cerrar</button>
+    <h2 id="dTitle"></h2>
+    <p id="dDesc"></p>
+    <p class="price" id="dPrice"></p>
+    <button type="button" id="favBtn">Añadir a favoritos</button>
+  </aside>
+  <script src="app.js"></script>
+</body>
+</html>
